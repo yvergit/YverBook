@@ -1,0 +1,35 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+// Work experience and education styles
+.workeduc-box {
+  border-left: $border;
+  margin-top: 2rem;
+
+  .workeduc-content {
+    @include timeline-item;
+
+    .year {
+      color: $main-color;
+      font-size: 1.2rem;
+
+      i {
+        margin-right: 0.4rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 0.3rem 0;
+    }
+
+    p {
+      font-size: 1.15rem;
+      text-align: justify;
+      line-height: 1.52rem;
+      letter-spacing: -1.2px;
+    }
+  }
+}

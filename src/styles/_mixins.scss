@@ -1,0 +1,87 @@
+@use 'variables' as *;
+
+// Button mixin
+@mixin button-style(
+  $bg-color: $main-color,
+  $text-color: $white-color,
+  $width: 9.5rem,
+  $height: 3rem
+) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  background: $bg-color;
+  border: $border;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: $text-color;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: $medium-animation;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: transparent;
+    color: $main-color;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin page-transition {
+  transition: transform $slow-animation cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@mixin card-style {
+  border: $border;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0.5rem 1.1rem;
+  text-align: center;
+  transition: $fast-animation ease;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
+@mixin social-icon {
+  @include flex-center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: $border;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: $main-color;
+  margin: 0 0.2rem;
+  transition: $medium-animation;
+
+  &:hover {
+    background-color: $main-color;
+    color: $white-color;
+  }
+}
+
+@mixin timeline-item {
+  position: relative;
+  padding-left: 1.6rem;
+  padding-bottom: 1.2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.65rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: $main-color;
+  }
+}

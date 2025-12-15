@@ -1,0 +1,30 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+// Book cover styles
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #076b00;
+  box-shadow: $box-shadow;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  transform-origin: right;
+
+  &.cover-left {
+    z-index: -1;
+  }
+
+  &.cover-right {
+    z-index: 100;
+    @include page-transition;
+
+    &.turn {
+      transform: rotateY(180deg);
+    }
+  }
+}

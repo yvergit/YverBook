@@ -1,0 +1,17 @@
+@use '../variables' as *;
+@use '../mixins' as *; // only if this file uses mixins
+
+.wrapper {
+  position: relative;
+  width: 66rem;
+  height: 45rem;
+  padding: 2rem;
+  perspective: 250rem;
+  animation: show-animate 2s forwards;
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+    height: 60vh;
+    padding: 1rem;
+  }
+}

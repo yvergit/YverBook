@@ -1,0 +1,44 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+// Services styles
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  .services-content {
+    flex: 1 1 10rem;
+    @include card-style;
+    padding: 0.6rem 0.5rem 0.8rem;
+
+    i {
+      font-size: 2.5rem;
+      color: $main-color;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.2rem 0 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      width: 8rem;
+      height: 2.5rem;
+      font-size: 0.9rem;
+
+      &:hover {
+        background-color: transparent;
+        color: $main-color;
+      }
+    }
+  }
+}
