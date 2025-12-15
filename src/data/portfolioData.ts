@@ -29,7 +29,7 @@ export const portfolioData = {
       id: "work1",
       period: "Apr, 2017 - Nov, 2024",
       position: "Front-end Developer",
-      company: "Indicia, Muwsea",
+      company: "Indicia, Freelance",
       description:
         "Built core features for SAAS App for Schlappi. Developed and optimized five 3D objects (blender). Conducted code audits and peer reviews. Delivered ui based on figma design (three js). Boosted overall performance and user satisfaction",
     },
@@ -45,7 +45,7 @@ export const portfolioData = {
       id: "work3",
       period: "Apr, 2021 - Feb, 2022",
       position: "web/Front-end Developer",
-      company: "Clever Age",
+      company: "Freelance",
       description:
         "Supported bug fixing and delivered solutions for the front end of Shopify, WordPress and more sites.",
     },
@@ -114,17 +114,17 @@ export const portfolioData = {
         { name: "JS", icon: "bx bxl-javascript" },
         { name: "Angular", icon: "bx bxl-angular" },
         { name: "React Js", icon: "bx bxl-react" },
-        { name: "BootStrap", icon: "bx bxl-bootstrap" },
-        { name: "Jquery", icon: "bx bxl-jquery" },
+        { name: "Vue Js", icon: "bx bxl-vue" },
+        { name: "Three Js", icon: "bx bxl-three" },
       ],
     },
     {
       category: "Back-End",
       skills: [
         { name: "Python", icon: "bx bxl-python" },
-        { name: "Java", icon: "bx bxl-java" },
+        { name: "SQL", icon: "bx bxl-sql" },
         { name: "Node JS", icon: "bx bxl-nodejs" },
-        { name: "PHP", icon: "bx bxl-php" },
+        { name: ".NET", icon: "bx bxl-.net" },
       ],
     },
     {
