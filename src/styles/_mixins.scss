@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-// Button mixin
+// Existing mixins...
 @mixin button-style(
   $bg-color: $main-color,
   $text-color: $white-color,
@@ -29,6 +29,7 @@
   }
 }
 
+// Flex centering
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -83,5 +84,16 @@
     height: 1.2rem;
     border-radius: 50%;
     background: $main-color;
+  }
+}
+
+// === New responsive mixin ===
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 767px) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (min-width: 768px) and (max-width: 1023px) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 1024px) { @content; }
   }
 }
