@@ -141,7 +141,7 @@ export const portfolioData = {
   latestProject: {
     id: "project1",
     title: "Webshop example",
-    image: "/book-portfolio/website 3.png",
+    image: "/website 3.png",
     techUsed: "React, TypeScript, SCSS",
     description:
       "Responsive webshops, web apps and websites",
