@@ -14,7 +14,7 @@ export const portfolioData = {
     title: "Full-stack Developer",
     description:
       "Hi, I am a full stack developer with solid experience with SAAS applications, web management, platforms in e-commerce, retail, marketing, and more. I'm a medior/senior backend developer and a senior frontend developer. I aim to grow and be able to lead a team, focusing on building scalable systems and creating practical applications that improve user experience.",
-    profileImage: "/book-portfolio/logo.jpg",
+    profileImage: "/logo.jpg",
   } as PersonalInfo,
 
   socialMedia: {
