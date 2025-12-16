@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/book-portfolio/",
+  base: "/YverBook/",
   build: {
     sourcemap: false,
     chunkSizeWarningLimit: 1000, // cảnh báo khi bundle quá lớn
